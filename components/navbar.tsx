@@ -91,13 +91,7 @@ export default function Navbar() {
                 onClick={() => scrollToSection("influencers")}
                 className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
               >
-                Talent
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
-              >
-                Pricing
+                Influencers
               </button>
               <button
                 onClick={() => scrollToSection("partners")}
@@ -122,7 +116,7 @@ export default function Navbar() {
               >
                 <Search size={20} />
               </button>
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               <Button onClick={() => scrollToSection("contact")} className="bg-pink-600 hover:bg-pink-700 text-white">
                 Get In Touch
               </Button>
@@ -161,13 +155,7 @@ export default function Navbar() {
                 onClick={() => scrollToSection("influencers")}
                 className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
               >
-                Talent
-              </button>
-              <button
-                onClick={() => scrollToSection("pricing")}
-                className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
-              >
-                Pricing
+                Influencers
               </button>
               <button
                 onClick={() => scrollToSection("partners")}
