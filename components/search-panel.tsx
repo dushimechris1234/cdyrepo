@@ -29,7 +29,7 @@ export default function SearchPanel({ isOpen, onClose }: SearchPanelProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [results, setResults] = useState<SearchResult[]>([])
   const [recentSearches, setRecentSearches] = useState<string[]>([])
-  const [activeTab, setActiveTab] = useState<"all" | "services" | "influencers" | "categories">("all")
+  const [activeTab, setActiveTab] = useState<"all" | "service" | "influencer" | "category">("all")
   const inputRef = useRef<HTMLInputElement>(null)
   const { resolvedTheme } = useTheme()
 
@@ -314,9 +314,9 @@ export default function SearchPanel({ isOpen, onClose }: SearchPanelProps) {
                 All
               </button>
               <button
-                onClick={() => setActiveTab("services")}
+                onClick={() => setActiveTab("service")}
                 className={`px-4 py-2 text-sm font-medium flex-1 ${
-                  activeTab === "services"
+                  activeTab === "service"
                     ? "border-b-2 border-pink-500 text-pink-500"
                     : "text-gray-400 dark:text-gray-600 hover:text-white dark:hover:text-gray-900"
                 }`}
@@ -324,9 +324,9 @@ export default function SearchPanel({ isOpen, onClose }: SearchPanelProps) {
                 Services
               </button>
               <button
-                onClick={() => setActiveTab("influencers")}
+                onClick={() => setActiveTab("influencer")}
                 className={`px-4 py-2 text-sm font-medium flex-1 ${
-                  activeTab === "influencers"
+                  activeTab === "influencer"
                     ? "border-b-2 border-pink-500 text-pink-500"
                     : "text-gray-400 dark:text-gray-600 hover:text-white dark:hover:text-gray-900"
                 }`}
@@ -334,9 +334,9 @@ export default function SearchPanel({ isOpen, onClose }: SearchPanelProps) {
                 Influencers
               </button>
               <button
-                onClick={() => setActiveTab("categories")}
+                onClick={() => setActiveTab("category")}
                 className={`px-4 py-2 text-sm font-medium flex-1 ${
-                  activeTab === "categories"
+                  activeTab === "category"
                     ? "border-b-2 border-pink-500 text-pink-500"
                     : "text-gray-400 dark:text-gray-600 hover:text-white dark:hover:text-gray-900"
                 }`}
