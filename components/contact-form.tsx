@@ -47,7 +47,7 @@ export default function ContactForm() {
                 <Mail className="mr-4 text-pink-500 h-6 w-6 mt-1" />
                 <div>
                   <h4 className="font-medium dark:text-gray-900">Email</h4>
-                  <p className="text-gray-400 dark:text-gray-600">hello@cdy.com</p>
+                  <p className="text-gray-400 dark:text-gray-600">cdyagency@gmail.com</p>
                 </div>
               </div>
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
                 <Phone className="mr-4 text-pink-500 h-6 w-6 mt-1" />
                 <div>
                   <h4 className="font-medium dark:text-gray-900">Phone</h4>
-                  <p className="text-gray-400 dark:text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-400 dark:text-gray-600">+250729119833</p>
                 </div>
               </div>
 
@@ -64,9 +64,9 @@ export default function ContactForm() {
                 <div>
                   <h4 className="font-medium dark:text-gray-900">Office</h4>
                   <p className="text-gray-400 dark:text-gray-600">
-                    123 Creator Ave, Suite 500
+                    Kigali, Rwanda
                     <br />
-                    San Francisco, CA 94103
+                    Kimironko
                   </p>
                 </div>
               </div>
