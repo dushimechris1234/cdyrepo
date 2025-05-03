@@ -9,7 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "CDY - Modern Marketing Agency",
   description: "We power the creator economy with innovative digital strategies and creator partnerships.",
-    generator: 'v0.dev'
+  icons: {
+    icon: "/cdy.ico",
+  },
 }
 
 export default function RootLayout({
