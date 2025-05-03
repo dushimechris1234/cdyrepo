@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "CDY - Modern Marketing Agency",
   description: "We power the creator economy with innovative digital strategies and creator partnerships.",
   icons: {
-    icon: "/cdy.ico",
+    icon: "/favi.ico",
   },
 }
 

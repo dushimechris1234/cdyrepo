@@ -122,7 +122,7 @@ export default function Navbar() {
               >
                 <Search size={20} />
               </button>
-              {/* <ThemeToggle /> */}
+              <ThemeToggle />
               <Button onClick={() => scrollToSection("contact")} className="bg-pink-600 hover:bg-pink-700 text-white">
                 Get In Touch
               </Button>
