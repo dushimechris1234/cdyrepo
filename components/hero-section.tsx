@@ -31,29 +31,24 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white dark:text-gray-900">
-              We Power the{" "}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight leading-tight mb-6 text-white dark:text-gray-900">
+              Connecting Brands{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600">
-                Creator Economy
+                with Influencers
               </span>
             </h1>
+            <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-white dark:text-green-700">Explore our Affliate platform</h1>
             <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-700 mb-8 max-w-2xl">
-              Connecting brands with audiences through innovative digital strategies and creator partnerships.
+              Our Affliate marketing Platform allows influencers to promote products of companies of all sizes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection("services")}
-                className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg"
+                className="bg-pink-600 hover:cursor-pointer hover:bg-pink-700 text-white px-12 py-9 text-lg"
               >
-                Get Started
+                Explore our platform
               </Button>
-              <Button
-                onClick={() => scrollToSection("pricing")}
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 dark:border-gray-900 dark:text-gray-900 dark:hover:bg-gray-900/10 px-8 py-6 text-lg"
-              >
-                View Pricing
-              </Button>
+              
             </div>
           </div>
           <div className="w-full lg:w-1/2 relative">

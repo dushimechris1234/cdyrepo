@@ -16,7 +16,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-black to-gray-900 dark:from-gray-100 dark:to-white text-white dark:text-gray-900">
       <Navbar />
       <div id="hero">
-        <HeroSection />
+        <HeroSection /> 
       </div>
       <BrandLogos />
       <div id="services">

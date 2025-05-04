@@ -63,7 +63,10 @@ const StatItem = ({ icon, value, label, duration = 2, delay = 0 }: StatItemProps
   return (
     <div ref={nodeRef} className="text-center p-6">
       <div className="flex justify-center mb-4">{icon}</div>
-      <div className="text-4xl md:text-5xl font-bold mb-2">{count.toLocaleString()}</div>
+      <div className="text-4xl md:text-5xl font-bold mb-2">
+        {count.toLocaleString()}
+        <span className="text-pink-500">{" "}+</span>
+      </div>
       <div className="text-gray-400">{label}</div>
     </div>
   )
@@ -73,26 +76,26 @@ export default function StatsSection() {
   const stats = [
     {
       icon: <Users className="h-10 w-10 text-pink-500" />,
-      value: 5000,
+      value: 50,
       label: "Influencers",
       delay: 0,
     },
     {
       icon: <BarChart className="h-10 w-10 text-pink-500" />,
-      value: 250,
+      value: 10,
       label: "Brands Served",
       delay: 0.2,
     },
     {
       icon: <Award className="h-10 w-10 text-pink-500" />,
-      value: 1200,
+      value: 100,
       label: "Campaigns Completed",
       delay: 0.4,
     },
     {
       icon: <Globe className="h-10 w-10 text-pink-500" />,
-      value: 30,
-      label: "Countries Reached",
+      value: 12,
+      label: "Districts Reached",
       delay: 0.6,
     },
   ]

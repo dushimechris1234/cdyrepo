@@ -131,7 +131,7 @@ export default function Navbar() {
               >
                 <Search size={20} />
               </button>
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white dark:text-gray-900 focus:outline-none"
