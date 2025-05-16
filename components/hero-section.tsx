@@ -42,13 +42,14 @@ export default function HeroSection() {
               Our Affliate marketing Platform allows influencers to promote products of companies of all sizes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={() => scrollToSection("services")}
-                className="bg-pink-600 hover:cursor-pointer hover:bg-pink-700 text-white px-12 py-9 text-lg"
-              >
-                Explore our platform
-              </Button>
-              
+              <a href="https://cdy-affliate-front-end.vercel.app" target="_blank" rel="noopener noreferrer">
+                <Button
+                  onClick={() => scrollToSection("services")}
+                  className="bg-pink-600 hover:cursor-pointer hover:bg-pink-700 text-white px-12 py-9 text-lg"
+                >
+                  Explore our platform
+                </Button>
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-1/2 relative">
