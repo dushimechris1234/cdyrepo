@@ -3,14 +3,11 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Search } from "lucide-react"
-import ThemeToggle from "./theme-toggle"
-import { useTheme } from "next-themes"
 import SearchPanel from "./search-panel"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
 
@@ -35,12 +32,8 @@ export default function Navbar() {
 
   const navbarBg = mounted
     ? scrolled
-      ? resolvedTheme === "dark"
-        ? "bg-white/90 backdrop-blur-md"
-        : "bg-black/90 backdrop-blur-md"
-      : resolvedTheme === "dark"
-        ? "bg-white/80 backdrop-blur-md"
-        : "bg-black/80 backdrop-blur-md"
+      ? "bg-black/90 backdrop-blur-md"
+      : "bg-black/80 backdrop-blur-md"
     : "bg-transparent"
 
   const scrollToSection = (sectionId: string) => {
@@ -64,9 +57,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarBg} text-white dark:text-gray-900`}
-      >
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarBg} text-white`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -74,49 +65,36 @@ export default function Navbar() {
               <div className="relative h-10 w-40">
                 <div className="text-2xl font-bold flex items-center">
                   <span className="text-pink-500">C</span>
-                  <span className="dark:text-gray-900">DY</span>
+                  <span className="text-black">DY</span>
                 </div>
               </div>
             </button>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <button
-                onClick={() => scrollToSection("services")}
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
-              >
+              <button onClick={() => scrollToSection("services")} className="text-white hover:text-pink-500 transition-colors">
                 Services
               </button>
-              <button
-                onClick={() => scrollToSection("influencers")}
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
-              >
+              <button onClick={() => scrollToSection("influencers")} className="text-white hover:text-pink-500 transition-colors">
                 Influencers
               </button>
-              <button
-                onClick={() => scrollToSection("partners")}
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
-              >
+              <button onClick={() => scrollToSection("partners")} className="text-white hover:text-pink-500 transition-colors">
                 Partners
               </button>
-              <button
-                onClick={() => scrollToSection("faq")}
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
-              >
+              <button onClick={() => scrollToSection("faq")} className="text-white hover:text-pink-500 transition-colors">
                 FAQ
               </button>
             </div>
 
-            {/* Search, Theme Toggle and CTA */}
+            {/* Search and CTA */}
             <div className="hidden md:flex items-center space-x-4">
               <button
                 onClick={toggleSearch}
                 aria-label="Search"
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors p-2 rounded-full hover:bg-white/10 dark:hover:bg-gray-900/10"
+                className="text-white hover:text-pink-500 transition-colors p-2 rounded-full hover:bg-white/10"
               >
                 <Search size={20} />
               </button>
-              {/* <ThemeToggle /> */}
               <Button onClick={() => scrollToSection("contact")} className="bg-pink-600 hover:bg-pink-700 text-white">
                 Get In Touch
               </Button>
@@ -127,14 +105,13 @@ export default function Navbar() {
               <button
                 onClick={toggleSearch}
                 aria-label="Search"
-                className="text-white dark:text-gray-900 hover:text-pink-500 transition-colors"
+                className="text-black hover:text-pink-500 transition-colors"
               >
                 <Search size={20} />
               </button>
-              {/* <ThemeToggle /> */}
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-white dark:text-gray-900 focus:outline-none"
+                className="text-black focus:outline-none"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -147,25 +124,25 @@ export default function Navbar() {
             <div className="md:hidden pt-4 pb-6 space-y-4">
               <button
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
+                className="block w-full text-left py-2 text-white hover:text-pink-500"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("influencers")}
-                className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
+                className="block w-full text-left py-2 text-white hover:text-pink-500"
               >
                 Influencers
               </button>
               <button
                 onClick={() => scrollToSection("partners")}
-                className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
+                className="block w-full text-left py-2 text-white hover:text-pink-500"
               >
                 Partners
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
-                className="block w-full text-left py-2 text-white dark:text-gray-900 hover:text-pink-500"
+                className="block w-full text-left py-2 text-white hover:text-pink-500"
               >
                 FAQ
               </button>
