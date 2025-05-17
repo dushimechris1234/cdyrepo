@@ -57,23 +57,23 @@ export default function HeroSection() {
               {/* Phone mockups */}
               <div className="absolute top-0 right-0 transform -rotate-6 shadow-xl rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=600&width=300"
+                  src="https://i.pinimg.com/736x/c1/7e/6a/c17e6a486d1b54d58243ede8fe7c5052.jpg"
                   alt="Social media content"
-                  className="w-[300px] h-auto object-cover"
+                  className="w-[300px] h-[300px] object-cover"
                 />
               </div>
               <div className="absolute top-20 right-32 transform rotate-3 shadow-xl rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=600&width=300"
+                  src="https://i.pinimg.com/736x/ae/81/cf/ae81cf9888c4445c064a35d4f64c58f4.jpg"
                   alt="Creator content"
-                  className="w-[300px] h-auto object-cover"
+                  className="w-[300px] h-[300px] object-cover"
                 />
               </div>
               <div className="absolute top-40 right-64 transform -rotate-3 shadow-xl rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder.svg?height=600&width=300"
+                  src="https://i.pinimg.com/736x/f1/73/1e/f1731ebf72775cf2fac356a576bf410b.jpg"
                   alt="Marketing campaign"
-                  className="w-[300px] h-auto object-cover"
+                  className="w-[300px] h-[300px] object-cover"
                 />
               </div>
             </div>
