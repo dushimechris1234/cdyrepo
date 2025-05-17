@@ -72,16 +72,16 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection("services")} className="text-white hover:text-pink-500 transition-colors">
+              <button onClick={() => scrollToSection("services")} className="text-black hover:text-pink-500 transition-colors">
                 Services
               </button>
-              <button onClick={() => scrollToSection("influencers")} className="text-white hover:text-pink-500 transition-colors">
+              <button onClick={() => scrollToSection("influencers")} className="text-black hover:text-pink-500 transition-colors">
                 Influencers
               </button>
-              <button onClick={() => scrollToSection("partners")} className="text-white hover:text-pink-500 transition-colors">
+              <button onClick={() => scrollToSection("partners")} className="text-black hover:text-pink-500 transition-colors">
                 Partners
               </button>
-              <button onClick={() => scrollToSection("faq")} className="text-white hover:text-pink-500 transition-colors">
+              <button onClick={() => scrollToSection("faq")} className="text-black hover:text-pink-500 transition-colors">
                 FAQ
               </button>
             </div>
