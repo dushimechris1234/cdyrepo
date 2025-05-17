@@ -57,7 +57,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarBg} text-white`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 bg-gray-300 transition-all duration-300 text-white`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -91,7 +91,7 @@ export default function Navbar() {
               <button
                 onClick={toggleSearch}
                 aria-label="Search"
-                className="text-white hover:text-pink-500 transition-colors p-2 rounded-full hover:bg-white/10"
+                className="text-black hover:text-pink-500 transition-colors p-2 rounded-full hover:bg-white/10"
               >
                 <Search size={20} />
               </button>
