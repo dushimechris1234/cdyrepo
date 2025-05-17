@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CDY - Modern Marketing Agency",
+  title: "CDY - Marketing Agency",
   description: "We power the creator economy with innovative digital strategies and creator partnerships.",
   icons: {
     icon: "/favi.ico",
