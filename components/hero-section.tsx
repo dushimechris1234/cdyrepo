@@ -39,8 +39,7 @@ export default function HeroSection() {
             </h1>
             <h1 className="text-2xl md:text-2xl lg:text-3xl font-bold leading-tight mb-6 text-white dark:text-green-700">Explore our Affliate platform</h1>
             <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-700 mb-8 max-w-2xl">
-              {/* Our Affliate marketing Platform allows influencers to promote products of companies of all sizes. */}
-              UMD
+              Our Affliate marketing Platform allows influencers to promote products of companies of all sizes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="https://cdy-affliate-front-end.vercel.app" target="_blank" rel="noopener noreferrer">
